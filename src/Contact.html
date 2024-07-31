@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us | Brand Builders</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="../Assets/Logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <header class="sticky top-0 z-[9999]">
+        <nav class="bg-[#000]">
+            <div class="container mx-auto px-5 py-2  lg:flex items-center justify-between text-nowrap" >
+                <div class="flex justify-between">
+                    <a href="#Home">
+                        <img src="../Assets/Logo.png" class="w-[62px] lg:w-[100px]" width="100%" alt="Logo"
+                      /></a>
+  
+                      <button onclick="toggleMenu()" class="lg:hidden">
+                        <i class="fa-solid text-white fa-bars text-3xl"></i>
+                      </button>
+                </div>
+  
+                <div id="menu" class=" hidden lg:block mt-5 lg:mt-0">
+                    <ul class="text-white flex lg:flex-row flex-col gap-[32px]">
+                        <li><a href="../index.html" class="bg-[#000] hover:text-black hover:bg-[#FFA500] px-4 py-2 rounded-md">Home</a></li>
+                        <li><a href="../src/service.html" class="bg-[#000] hover:text-black hover:bg-[#FFA500] px-4 py-2 rounded-md">What we do</a></li>
+                        <li class="relative group"><a href="./Project.html" class="bg-[#000] hover:text-black hover:bg-[#FFA500] px-4 py-2 rounded-md">Projects</a>
+                        </li>
+                        <li><a href="./About.html" class="bg-[#000] hover:text-black hover:bg-[#FFA500] px-4 py-2 rounded-md">About</a></li>
+                        <li><a href="./Contact.html" class="bg-[#000] hover:text-black hover:bg-[#FFA500] px-4 py-2 rounded-md">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div>
+                        <a href="./Contact.html"><button class="text-white hover:text-black hover:bg-[#FFA500] duration-500 border-2 border-[#FFA500] px-4 py-2 text-sm rounded-md hidden lg:block">Enquiry</button></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="bg-black">
+        <div class="bg-[url('https://images.unsplash.com/photo-1713946598501-d6b32e7c2464?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] h-[500px] bg-center bg-no-repeat bg-cover flex items-center justify-center backdrop-filter">
+            <h1 class="brightness-200 text-[#FFA500] bg-slate-900 px-4 py-2 text-[52px]">Contact us</h1>
+        </div>
+        <div>
+            <section class="flex justify-center flex-col min-h-screen items-center gap-10">        
+                <section id="Form" class="flex flex-col justify-center items-center gap-4 pt-10">
+                    <h1 class="text-[24px] text-[#FFA500] font-bold">Touch with us</h1>
+                    <form action="https://api.web3forms.com/submit" method="POST" name="contact-form">
+                        <section id="Form" class="flex flex-col justify-center items-center gap-4">
+        
+                            <input type="hidden" name="access_key" value="d956b830-49dd-45d9-9eba-0ccf4a151c2e">
+                            <input type="text" name="first_name" class="border-2 border-gray-500 p-2 rounded-md w-[300px] md:w-[400px]  focus:outline-[#FFA500]" placeholder="Firstname" >
+                            <input type="text" name="last_name" class="border-2 border-gray-500 p-2 rounded-md w-[300px] md:w-[400px] focus:outline-[#FFA500]" placeholder="Lastname" >
+                            <input type="email" name="user_email" class="border-2 border-gray-500 p-2 rounded-md w-[300px] md:w-[400px] focus:outline-[#FFA500]" placeholder="Email" >
+                            <input type="tel" name="ph_no" class="border-2 border-gray-500 p-2 rounded-md w-[300px] md:w-[400px] focus:outline-[#FFA500]" placeholder="Phone" >
+                
+                            <textarea name="feed_back" id="feedback"class="border-2 border-gray-500 p-2 rounded-md w-[300px] md:w-[400px] focus:outline-orange-500 mb-5" rows="6" placeholder="Type your message here" ></textarea>
+                            <button type="submit" class="px-6 py-2 mb-10 border-2 border-[#FFA500] rounded-xl text-[#FFA500] hover:text-black hover:bg-[#FFA500] text-sm">Submit</button>
+                        </section>
+                    </form>
+                    
+                </section>
+
+                <section class="flex justify-center items-center w-full ">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.2907190814617!2d80.00445087618124!3d12.759622687380142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f9875256a6bb%3A0x71fad013cca945bc!2s17%2C%20Kollaimettu%20St%2C%20Singaperumal%20Koil%2C%20Tamil%20Nadu%20603209!5e0!3m2!1sen!2sin!4v1722416532630!5m2!1sen!2sin" width="600" height="450" class="w-full h-[300px] md:h-[300px]"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-[#3A3A3A] min-h-[300px] flex flex-col md:flex-row flex-wrap md:items-center items-start justify-evenly w-full  md:mr-0">
+        <section>
+            <img src="../Assets/Logo.png" class="w-[100px] ml-10 mt-4" alt="">
+        </section>
+        <section class="ml-10 mt-4">
+            <ul class="text-white flex lg:flex-col flex-col gap-5">
+                <li><a href="../index.html" class="text-white hover:text-[#FFA500] py-2 rounded-md">Home</a></li>
+                <li><a href="./service.html" class="text-white text-nowrap hover:text-[#FFA500]  py-2 rounded-md">What we do</a></li>
+                <li class="relative group"><a href="./Project.html" class="text-white hover:text-[#FFA500] py-2 rounded-md">Projects</a>
+                </li>
+                <li><a href="./About.html" class="text-white hover:text-[#FFA500] py-2 rounded-md">About</a></li>
+                <li><a href="./Contact.html" class="text-white hover:text-[#FFA500] py-2 rounded-md">Contact</a></li>
+            </ul>
+        </section >
+        <section class="ml-10 mt-4">
+            <h2 class="font-bold text-[#FFA500] py-4">Our company services</h2>
+            <section>
+                <ul class="text-white flex lg:flex-col flex-col gap-[16px]">
+                    <li><a href="./Contact.html" class="text-white hover:text-[#FFA500] py-2 rounded-md">Social media account maintenance</a></li>
+                    <li><a href="./Contact.html" class="text-white text-nowrap hover:text-[#FFA500]  py-2 rounded-md">Branding</a></li>
+                    <li class="relative group"><a href="./Contact.html" class="text-white hover:text-[#FFA500] py-2 rounded-md">Graphic Design</a>
+                    </li>
+                    <li><a href="./Contact.html" class="text-white hover:text-[#FFA500] py-2 rounded-md">Product Photography</a></li>
+                    <li><a href="./Contact.html" class="text-white hover:text-[#FFA500] py-2 rounded-md">Model Shoot</a></li>
+                </ul>
+            </section>              
+        </section>
+        <section class="ml-10 mt-4">
+            <ul class="text-white flex lg:flex-col flex-col gap-[16px]">
+                <li><a href="./Contact.html" class="text-white hover:text-[#FFA500] py-2 rounded-md">Ad making</a></li>
+                <li><a href="./Contact.html" class="text-white text-nowrap hover:text-[#FFA500]  py-2 rounded-md">Video editing</a></li>
+                <li class="relative group"><a href="./Contact.html" class="text-white hover:text-[#FFA500] py-2 rounded-md">Projects</a>
+                </li>
+                <li><a href="./Contact.html" class="text-white hover:text-[#FFA500] py-2 rounded-md">Social media marketing</a></li>
+                <li><a href="./Contact.html" class="text-white hover:text-[#FFA500] py-2 rounded-md">Search Engine Optimization (SEO)</a></li>
+                <li><a href="./Contact.html" class="text-white hover:text-[#FFA500] py-2 rounded-md">Web Design and Web Development</a></li>
+            </ul>
+        </section>
+        <section class="ml-10 mt-4 mb-4">
+            <h2 class="font-bold text-[#FFA500] py-4">Connect with us</h2>
+            <ul class="text-white flex lg:flex-col flex-col gap-[16px]">
+                <li><a href="https://www.instagram.com/brandbuliders?igsh=Mmh2a3F5cWRiZjVr" target="_blank" class="text-white hover:text-[#FFA500] py-2 rounded-md">Instagram</a></li>
+                <li><a href="mailto:brandbuliders2106@gmail.com" target="_blank" class="text-white text-nowrap hover:text-[#FFA500]  py-2 rounded-md">Mail</a></li>
+                </li>
+                <li><a href="tel:+919361378565" class="text-white hover:text-[#FFA500] py-2 rounded-md">+91 9361378565</a></li>
+            </ul>
+
+        </section>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/dc1f9ab20d.js" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
+
